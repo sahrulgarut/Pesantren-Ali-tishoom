@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id"> <head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Sosial Media - Ali Tishoom</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: sans-serif; /* Jenis tulisan tanpa dekorasi */
+            margin: 70; /* Menghilangkan jarak di tepi layar */
+            display: flex; /* Mengaktifkan mode kotak fleksibel */
+            justify-content: center; /* Menengahkan konten secara mendatar */
+            align-items: center; /* Menengahkan konten secara vertikal (atas-bawah) */
+            height: 50vh; /* Tinggi halaman sesuai layar HP/Laptop */
+            
+            /* --- BAGIAN GANTI FOTO BACKGROUND DI SINI --- */
+            background-image: url('logo.jpeg'); /* GANTI 'foto_pesantren.jpg' dengan nama file foto Anda */
+            background-size: cover; /* Foto akan menutupi seluruh layar */
+            background-position: center; /* Fokus foto di tengah */
+            background-repeat: no-repeat; /* Foto tidak terulang-ulang */
+        }
+
+        .box {
+            background: rgba(8, 190, 63, 0.9); /* Putih transparan agar foto di belakang sedikit terlihat */
+            padding: 30px; /* Jarak antara isi dengan pinggiran kotak */
+            border-radius: 15px; /* Membuat sudut kotak membulat */
+            width: 320px; /* Lebar kotak agar rapi di tengah */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Memberi bayangan agar kotak terlihat timbul */
+            text-align: center; /* Semua tulisan di dalam kotak jadi rata tengah */
+        }
+
+        h2 { color: #006633; } /* Warna hijau gelap untuk judul */
+
+        .list-sosmed { list-style: none; padding: 0; } /* Menghapus titik-titik pada daftar */
+
+        .list-sosmed li { margin: 15px 0; } /* Memberi jarak antar tombol */
+
+        .btn {
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            color: white; /* Warna tulisan tombol jadi putih */
+            padding: 12px 25px; /* Ketebalan tombol */
+            border-radius: 8px; /* Sudut tombol membulat */
+            display: flex; /* Ikon dan teks sejajar */
+            align-items: center; justify-content: center;
+            gap: 10px; /* Jarak antara ikon dengan tulisan */
+            font-weight: bold;
+            transition: 0.3s; /* Efek animasi halus saat diklik */
+        }
+
+        /* --- WARNA TOMBOL --- */
+        .fb { background: #1877F2; } /* Warna Biru Facebook */
+        .ig { background: linear-gradient(45deg, #f09433, #bc1888); } /* Gradasi Instagram */
+        .yt { background: #FF0000; } /* Warna Merah YouTube */
+        .wa { background: #25D366; } /* Warna Hijau WhatsApp */
+
+        .btn:hover { transform: scale(1.05); } /* Tombol membesar sedikit saat disentuh kursor */
+
+        .back { margin-top: 20px; display: inline-block; color: #666; text-decoration: none; font-size: 14px; }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>HUBUNGI KAMI</h2>
+        <p>Silahkan pilih layanan kami:</p>
+
+        <ul class="list-sosmed">
+            <li><a href="https://facebook.com/PONDOKALITISHOOM" target="_blank" class="btn fb"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/ponpes_al.itishoom20" target="_blank" class="btn ig"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://youtube.com/channel/UCTKRhAij5fFEzQjGUmW6L3Q" target="_blank" class="btn yt"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a href="https://wa.me/6285861059425" target="_blank" class="btn wa"><i class="fab fa-whatsapp"></i> WhatsApp Admin</a></li>
+        </ul>
+
+        <a href="beranda.html" class="back">← Kembali ke Beranda</a>
+    </div>
+</body>
+</html>
